@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Preview</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container d-flex justify-content-center">
+    <div class="row">
+      <div class="col col-4">
+        <div class="card">
+          <div class="card-body d-flex" style="flex-direction: column;">
+            <h5 class="card-title pb-5">Update your profile</h5>
+  
+            <form>
+              <div class="form-group picture-container">        
+                <div class="picture">
+                  <img src="https://via.placeholder.com/210" id="picture-preview" class="img-fluid card-image rounded-circle" alt="Profile">
+                  <input type="file" id="picture-input">
+                </div>
+                <p>Choose a picture</p>
+              </div>      
+              
+              <div class="form-group">
+                <label for="name" style="float: left;">Name:</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+              </div>
+              <div class="form-group">
+                <label for="bio" style="float: left; margin-top: 14px;">Bio:</label>
+                <textarea class="form-control" id="bio" rows="3" placeholder="Enter your bio"></textarea>
+              </div>
+              <div class="d-grid gap-2">
+                <button type="submit" class="save btn btn-outline-primary mt-4">Save editions</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Javascript -->
+  <script src="./script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
